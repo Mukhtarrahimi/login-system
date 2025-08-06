@@ -19,6 +19,13 @@ class LoginSystem():
         title.place(x=0, y=0, relwidth=0)
         
         
+        login_frame = Frame(self.root, bg='white')
+        login_frame.place(x = 400, y = 150)
+        
+        logo_label = Label(login_frame, image=self.user_icon).grid(row=0, column=0, pady=20)
+        
+        user_label = Label(login_frame, text="Username", compound=LEFT, font=("times new roman", 15, "bold")).grid(row = 1, column=0, padx=20, pady=20)
+        
 root = Tk()
 obj = LoginSystem(root)
 root.mainloop()
