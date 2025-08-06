@@ -24,7 +24,9 @@ class LoginSystem():
         
         logo_label = Label(login_frame, image=self.user_icon).grid(row=0, column=0, pady=20)
         
-        user_label = Label(login_frame, text="Username", compound=LEFT, font=("times new roman", 15, "bold")).grid(row = 1, column=0, padx=20, pady=20)
+        user_label = Label(login_frame, text="Username", compound=LEFT, font=("times new roman", 15, "bold"), bg='white').grid(row = 1, column=0, padx=20, pady=20)
+        
+        password_label = Label(login_frame, text="Password", compound=LEFT, font=("times new roman", 15, "bold"))
         
 root = Tk()
 obj = LoginSystem(root)
